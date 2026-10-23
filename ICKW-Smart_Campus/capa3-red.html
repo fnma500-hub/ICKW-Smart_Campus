@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICKW Smart Campus - Capa 3 Red</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="script.js"></script>
+</head>
+<body id="top">
+
+<header class="top">
+    <nav class="nav" aria-label="Principal">
+        <a href="index.html" class="brand">
+            <img src="img/logo.jpg" alt="Logo ICKW Smart Campus">
+            <div>ICKW <span>SMART CAMPUS</span></div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="capa2-enlace.html">Capa 2 - Enlace</a>
+            <a href="capa3-red.html" class="on">Capa 3 - Red</a>
+            <a href="capa4-transporte.html">Capa 4 - Transporte</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <span class="tag">CAPA 3 · MODELO OSI</span>
+            <h1>El viaje a traves del Modelo OSI</h1>
+            <p>Descubre cómo la información viaja a través de las siete capas del modelo OSI, enfocándonos en cómo los paquetes cruzan redes distintas en la Capa 3.</p>
+            <div class="btns">
+                <a href="#7-capas" class="btn">Ver las 7 capas OSI</a>
+                <a href="#enrutamiento" class="btn sec">Explorar el enrutamiento</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="img/enrutamiento.png" alt="El viaje de los datos a través del modelo OSI" style="max-width:100%; height:auto; border-radius:12px;">
+        </div>
+    </div>
+</header>
+
+<div class="stats" aria-label="Datos rápidos">
+    <div class="stat"><b>7 Capas</b><span>Modelo OSI completo</span></div>
+    <div class="stat"><b>32 bits</b><span>Longitud de una IPv4</span></div>
+    <div class="stat"><b>Paquete</b><span>Unidad de datos de Capa 3</span></div>
+    <div class="stat"><b>Router</b><span>Dispositivo principal</span></div>
+</div>
+
+<div class="layout">
+    <aside class="toc" aria-label="Índice de la página">
+        <h2>EN ESTE PORTAL</h2>
+        <a href="#viaje-osi">Modelo OSI</a>
+        <a href="#7-capas">Las 7 capas OSI</a>
+        <a href="#que-es">¿Qué es la Capa 3?</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#paquete">El paquete IP</a>
+        <a href="#direccionamiento">Direccionamiento</a>
+        <a href="#versiones">IPv4 vs IPv6</a>
+        <a href="#enrutamiento">Enrutamiento</a>
+        <a href="#icmp">ICMP y diagnóstico</a>
+        <a href="#comparativo">Capa 2 vs Capa 3</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+    </aside>
+
+    <main>
+        <section id="viaje-osi">
+            <h2>Modelo OSI</h2>
+            <p>El modelo OSI es el marco conceptual que describe el <strong>viaje de los datos</strong> desde la mente del
+               usuario (aplicaciones) hasta el medio físico de transmisión en forma de pulsos eléctricos o luz, y viceversa 
+               en el destino.</p>
+            <p>A medida que los datos descienden por las capas en el equipo de origen, cada capa añade su propia información de control (encapsulación). Al llegar al destino, el proceso se invierte (desencapsulación) para que la aplicación receptora entienda el mensaje.</p>
+        </section>
+
+        <section id="7-capas">
+            <h2>Las 7 capas del modelo OSI</h2>
+            <p>Explora cada una de las capas que forman parte del viaje de los datos:</p>
+            <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 20px;">
+                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <small style="color: var(--accent); font-weight: 700;">CAPA 7</small>
+                        <h3 style="margin-top: 5px;">Aplicación</h3>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="capa7-aplicacion.html" class="btn" style="display: block; text-align: center; padding: 8px 12px; font-size: 0.9rem;">Entrar a Capa 7</a>
+                    </div>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <small style="color: var(--accent); font-weight: 700;">CAPA 6</small>
+                        <h3 style="margin-top: 5px;">Presentación</h3>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="capa6-presentacion.html" class="btn" style="display: block; text-align: center; padding: 8px 12px; font-size: 0.9rem;">Entrar a Capa 6</a>
+                    </div>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <small style="color: var(--accent); font-weight: 700;">CAPA 5</small>
+                        <h3 style="margin-top: 5px;">Sesión</h3>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="capa5-sesion.html" class="btn" style="display: block; text-align: center; padding: 8px 12px; font-size: 0.9rem;">Entrar a Capa 5</a>
+                    </div>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <small style="color: var(--accent); font-weight: 700;">CAPA 4</small>
+                        <h3 style="margin-top: 5px;">Transporte</h3>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="capa4-transporte.html" class="btn" style="display: block; text-align: center; padding: 8px 12px; font-size: 0.9rem;">Entrar a Capa 4</a>
+                    </div>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <small style="color: var(--accent); font-weight: 700;">CAPA 3</small>
+                        <h3 style="margin-top: 5px;">Red</h3>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="capa3-red.html" class="btn" style="display: block; text-align: center; padding: 8px 12px; font-size: 0.9rem;">Entrar a Capa 3</a>
+                    </div>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <small style="color: var(--accent); font-weight: 700;">CAPA 2</small>
+                        <h3 style="margin-top: 5px;">Enlace de datos</h3>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="capa2-enlace.html" class="btn" style="display: block; text-align: center; padding: 8px 12px; font-size: 0.9rem;">Entrar a Capa 2</a>
+                    </div>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <small style="color: var(--accent); font-weight: 700;">CAPA 1</small>
+                        <h3 style="margin-top: 5px;">Física</h3>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="capa1-fisica.html" class="btn" style="display: block; text-align: center; padding: 8px 12px; font-size: 0.9rem;">Entrar a Capa 1</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="que-es">
+            <h2>¿Qué es la Capa 3 - Red dentro del viaje?</h2>
+            <p>Mientras las capas inferiores manejan el entorno local, la Capa 3 es clave para que la información cruce <strong>entre redes diferentes</strong> en su travesía global. Recibe los segmentos de la Capa 4 y los encapsula en <strong>paquetes</strong> con una dirección IP de origen y destino.</p>
+            <div class="note"><strong>Analogía del viaje:</strong> La dirección MAC de la Capa 2 sirve para moverse dentro de una misma calle, pero la dirección IP de la Capa 3 es el mapa y la dirección postal necesaria para viajar por todo el país hasta el destino final.</div>
+        </section>
+
+        <section id="funciones">
+            <h2>Funciones principales de la Capa 3</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Direccionamiento lógico</h3>
+                    <p>Asigna direcciones IP que identifican unívocamente a cada dispositivo y a la red a la que pertenece en el mapa global.</p>
+                </div>
+                <div class="card">
+                    <h3>Enrutamiento</h3>
+                    <p>Los routers consultan tablas para elegir la ruta más eficiente en el viaje del paquete hacia su destino.</p>
+                </div>
+                <div class="card">
+                    <h3>Encapsulación</h3>
+                    <p>Envuelve el segmento de transporte añadiendo la cabecera IP con la información de origen y destino.</p>
+                </div>
+                <div class="card">
+                    <h3>Fragmentación</h3>
+                    <p>Divide los paquetes grandes si un enlace intermedio tiene un límite menor de tamaño, asegurando que continúen su viaje.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="paquete">
+            <h2>Anatomía de un paquete IP: La maleta del viajero</h2>
+            <p>Imagina que cada paquete es una <strong>maleta de viaje</strong> que cruza el mundo. Su etiqueta exterior lleva toda la información que los routers leen en cada parada del camino:</p>
+            <div class="fields">
+                <div class="field">Pasaporte<small>Versión (IPv4 / IPv6)</small></div>
+                <div class="field">Peso de la maleta<small>Longitud total</small></div>
+                <div class="field hot">Boleto con límite<small>TTL (Saltos máximos)</small></div>
+                <div class="field">Idioma del viaje<small>Protocolo (TCP, UDP)</small></div>
+                <div class="field hot">Remitente<small>IP de origen</small></div>
+                <div class="field hot">Destino final<small>IP de destino</small></div>
+                <div class="field">Sello de seguridad<small>Checksum (Integridad)</small></div>
+                <div class="field">El regalo dentro<small>Datos / Carga útil</small></div>
+            </div>
+            <p>El <strong>TTL (Time to Live)</strong> funciona como un boleto con un número máximo de autobuses que puedes tomar; baja en cada parada de router para evitar que la maleta se quede viajando por siempre en un bucle infinito.</p>
+        </section>
+
+        <section id="direccionamiento">
+            <h2>Direccionamiento IP: Tipos de vecindarios
+            </h2>
+            <p>Para que las maletas no se pierdan, las direcciones IP funcionan como los distintos tipos de domicilios en el mapa global:</p>
+            <ul>
+                <li><strong>Casas de privadas o fraccionamientos cerrados (IPs Privadas):</strong> Son direcciones como <code>192.168.0.0/16</code> que solo tienen validez dentro de una red local (como la red de tu casa o del campus). Fuera de ahí no existen.</li>
+                <li><strong>El espejo de casa (Loopback):</strong> La dirección <code>127.0.0.1</code> es como hablar contigo mismo frente al espejo; sirve para que el equipo se envíe mensajes a sí mismo en pruebas internas.</li>
+                <li><strong>Direcciones postales oficiales de todo el mundo (IPs Públicas):</strong> Son únicas, oficiales y visibles para cualquier habitante del planeta a través de Internet.</li>
+            </ul>
+        </section>
+
+        <section id="versiones">
+            <h2>IPv4 vs IPv6 en el modelo OSI</h2>
+            <div class="tabs" role="tablist">
+                <button class="tab on" type="button" role="tab" data-tab="p4" aria-selected="true">IPv4</button>
+                <button class="tab" type="button" role="tab" data-tab="p6" aria-selected="false">IPv6</button>
+            </div>
+            <div class="panel on" id="p4" role="tabpanel">
+                <p><strong>IPv4</strong> utiliza direcciones de 32 bits. Debido al crecimiento masivo de dispositivos conectados en el modelo OSI, se apoya en NAT para compartir direcciones públicas.</p>
+            </div>
+            <div class="panel" id="p6" role="tabpanel">
+                <p><strong>IPv6</strong> utiliza direcciones de 128 bits en formato hexadecimal, ofreciendo un espacio inagotable para el futuro de las comunicaciones globales.</p>
+            </div>
+            <div class="scroll">
+                <table>
+                    <thead><tr><th>Característica</th><th>IPv4</th><th>IPv6</th></tr></thead>
+                    <tbody>
+                        <tr><td>Tamaño</td><td>32 bits</td><td>128 bits</td></tr>
+                        <tr><td>Notación</td><td>Decimal con puntos</td><td>Hexadecimal con dos puntos</td></tr>
+                        <tr><td>Espacio</td><td>~4,3 mil millones</td><td>Prácticamente ilimitado</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="enrutamiento">
+            <h2>Enrutamiento: El trayecto del paquete</h2>
+            <p>Los routers actúan como estaciones de transferencia en el viaje de los datos, consultando sus tablas para decidir el siguiente salto.</p>
+            <div class="scroll">
+                <table>
+                    <thead><tr><th>Red destino</th><th>Siguiente salto</th><th>Interfaz</th></tr></thead>
+                    <tbody>
+                        <tr><td>192.168.1.0/24</td><td>Conectada</td><td>Gig0/0</td></tr>
+                        <tr><td>10.0.0.0/8</td><td>172.16.0.2</td><td>Gig0/1</td></tr>
+                        <tr><td>0.0.0.0/0 (por defecto)</td><td>172.16.0.1</td><td>Gig0/2</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="icmp">
+            <h2>ICMP y diagnóstico del viaje</h2>
+            <dl>
+                <dt>ICMP</dt><dd>Protocolo de mensajes que reporta incidencias durante el viaje (como "tiempo excedido" o "destino inaccesible").</dd>
+                <dt>ping</dt><dd>Verifica la conectividad y el tiempo de respuesta entre origen y destino.</dd>
+                <dt>traceroute</dt><dd>Muestra cada router (salto) por el que pasa el paquete en su camino.</dd>
+            </dl>
+        </section>
+
+        <section id="comparativo">
+            <h2>Capa 2 vs Capa 3</h2>
+            <div class="scroll">
+                <table>
+                    <thead><tr><th>Aspecto</th><th>Capa 2 - Enlace</th><th>Capa 3 - Red</th></tr></thead>
+                    <tbody>
+                        <tr><td>Unidad de datos</td><td>Trama</td><td>Paquete</td></tr>
+                        <tr><td>Direccionamiento</td><td>Físico (MAC)</td><td>Lógico (IP)</td></tr>
+                        <tr><td>Dispositivo clave</td><td>Switch</td><td>Router</td></tr>
+                        <tr><td>Ámbito del viaje</td><td>Red local (LAN)</td><td>Entre redes (WAN / Internet)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="preguntas">
+            <h2>Preguntas frecuentes</h2>
+            <details><summary>¿Por qué cambian las MACs pero la IP se mantiene?</summary><p>La dirección IP identifica el origen y destino global del viaje, mientras que las MACs cambian en cada salto físico de router a router.</p></details>
+            <details><summary>¿Cuál es el papel del modelo OSI en el desarrollo de software?</summary><p>Permite modularizar los sistemas de comunicación para que diferentes tecnologías puedan interoperar sin problemas.</p></details>
+        </section>
+
+        <section id="fuentes">
+            <h2>Fuentes y enlaces</h2>
+            <ul>
+                <li><a href="https://www.netacad.com/" target="_blank" rel="noopener">Cisco Networking Academy</a></li>
+                <li><a href="https://www.rfc-editor.org/rfc/rfc791" target="_blank" rel="noopener">RFC 791: IPv4</a></li>
+            </ul>
+        </section>
+
+        <nav class="pager" aria-label="Navegación entre capas">
+            <a href="capa2-enlace.html">← Capa anterior: Enlace</a>
+            <a href="index.html">Inicio</a>
+            <a href="capa4-transporte.html">Siguiente capa: Transporte →</a>
+        </nav>
+    </main>
+</div>
+
+<footer class="foot">
+    <div class="foot-grid">
+
+        <nav class="foot-col" aria-label="En esta página">
+            <h4>En esta página</h4>
+            <ul>
+                <li><a href="#viaje-osi">El viaje de los datos</a></li>
+                <li><a href="#7-capas">Las 7 capas OSI</a></li>
+                <li><a href="#que-es">Capa 3: Red</a></li>
+                <li><a href="#enrutamiento">Enrutamiento</a></li>
+            </ul>
+        </nav>
+
+        <nav class="foot-col" aria-label="Modelo OSI">
+            <h4>Modelo OSI</h4>
+            <ul>
+                <li><a href="capa1-fisica.html">Capa 1 · Física</a></li>
+                <li><a href="capa2-enlace.html">Capa 2 · Enlace</a></li>
+                <li><a href="capa3-red.html">Capa 3 · Red</a></li>
+                <li><a href="capa4-transporte.html">Capa 4 · Transporte</a></li>
+            </ul>
+        </nav>
+
+        <nav class="foot-col" aria-label="Referencias">
+            <h4>Referencias</h4>
+            <ul>
+                <li><a href="https://www.netacad.com/" target="_blank" rel="noopener">Cisco Networking Academy</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="foot-base">
+        <p>Instituto Católico Karol Wojtyla · Bachillerato Técnico en Desarrollo de Software · ExpoTécnica 2026</p>
+        <a href="#top" class="foot-top">↑ Volver arriba</a>
+    </div>
+</footer>
+
+</body>
+</html>
